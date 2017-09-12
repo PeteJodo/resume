@@ -1,79 +1,66 @@
 \documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\usepackage{hyperref}   % for hyperlinks
+\usepackage{helvetica} % use helvetica.sty
+\usepackage{hyperref} % for hyperlinks
 \setlength{\textwidth}{5.1in} % set width of text portion
 
 \begin{document}
 
 % Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf PETER JODOGNE}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{32 46th Street}
- \moveleft.5\hoffset\centerline{Weehawken, NJ 07086}
- \moveleft.5\hoffset\centerline{(732) 216-3011}
- \moveleft.5\hoffset\centerline{pete.jodogne@gmail.com}
+\moveleft.5\hoffset\centerline{\large\bf PETER JODOGNE}
 
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+
+% address begins here, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{386 Hoover Avenue}
+\moveleft.5\hoffset\centerline{Bloomfield, NJ 07003}
+\moveleft.5\hoffset\centerline{(732) 216-3011}
+\moveleft.5\hoffset\centerline{pete.jodogne@gmail.com}
 
 \begin{resume}
- 
-\section{OBJECTIVE}  A position in software engineering and development with an emphasis on internet technologies. 
- 
- 
-\section{COMPUTER \\ SKILLS} {\sl Languages:} Javascript, Java, C\#, 
-         C, Python, C++, PHP, Go, Rust, Scheme \\
-         		 {\sl Software:} Git, MySql, Postgresql, Redis, Memcache, Nginx, Apache \\
-                {\sl Operating Systems:} Linux, MacOS (Unix) and Windows. \\
-                {\sl Other:} HTML5, CSS3, jQuery, SQL. 
- 
-\section{EXPERIENCE} {\sl Developer} \hfill February 2014 - December 2014 \\
-                Celery project, BTX Trader, 
-               Manhattan, NY 
-                \begin{itemize}  \itemsep -2pt %reduce space between items
-                \item Had a hand in creating a robust front-end grid that's UI-friendly and mobile-ready.
-                \item Created visual graphs to present transparent data of the system using D3.js.
-                \item Added the ability for instant purchases of funds written in Python running on Appengine for users with strict constraints in defense of potential fraud.
-                \end{itemize}
- 
-                {\sl Developer} \hfill June 2013 - December 2013 \\
-                Shadow Financial, Inc., Piscataway, NJ
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Develop software for large scale financial back office software.
-                 \item Used the C\# programming language and .NET framework.
-                 \item Helped build internal tools used by the company such as expanding the in-house automated testing suite to provide more feedback, allowing developers to quickly find what is failing.
-                 \end{itemize}
-                 
-               {\sl Intern, Developer} \hfill            Summer 2012 \\
-                MerchantFuse, Manhattan, NY
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item Interned as a full stack web developer.
-                 \item Used the CodeIgniter PHP framework and a MySql database.
-                 \end{itemize} 
- 
-\section{EDUCATION} {\sl Bachelor of Science,} Computer Science \\
-                      % \sl will be bold italic in New Century Schoolbook (or
-	              % any postscript font) and just slanted in
-		      %	Computer Modern (default) font
-                Rutgers State University, New Brunswick, NJ, 
-                graduated May 2013 \\
-                Concentration: Software engineering \& Internet technologies \\
-                Projects: Multi-threaded bittorrent CLI \\
- 
-\section{PROJECTS}  {\sl Rdeck} \\
-					A project implementing playing cards and different games that use them in the new programming language Rust in an effort to explore its features and use-cases.   \\
-					Source code at \url{https://github.com/PeteJodo/rdeck} \newline \newline
-					{\sl Sample Web Authorization} \\
-					NodeJS sample auth that logs on \& off a user, and allows to register to a postgres db and uses redis as a session store. \\
-					Source code at \url{https://github.com/PeteJodo/sample-auth}
-                 
- 
+
+\section{OBJECTIVE}
+    A position in software engineering with an emphasis on internet technologies, in an environment that encourages advancing one's skills and knowledge.
+
+\section{COMPUTER \\ SKILLS}
+    Primary Languages: {\small Javascript, Java} \\
+    Hobby Languages: {\small C, Go, Rust} \\
+    Frameworks: {\small React, Relay, Redux} \\
+    Knowledge: {\small HTML, CSS, SQL, Git, Node.js, Flow, Webpack, Babel, GraphQL}
+
+\section{EXPERIENCE}
+    % === 1stdibs =============================================================
+    Front End Developer \hfill \textbf{1stdibs, Inc.} \\
+    \textsl{February 2015 - current} \hfill Manhattan, NY
+
+    \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Developed the build process for the core React component library that the company uses to keep consistent functionality and styling across its sites where single component implementations would have multiple designs which get built and exported as their own components with interchangeable themes. 
+    \item Created a scaffolding tool for npm packages that required a transpilation process, helping developers get started on shared packages used by the frontend team without having to mess with webpack, babel, sass, and storybook configurations.
+    \item Created the initial frontend implementation for the buyer site's cart feature; the "Call Seller" feature, which in itself involved communication, planning, and integration with a 3rd party service provider; and other high-impact features.
+    \end{itemize}
+
+    % === BTX Trader ==========================================================
+	Developer \hfill \textbf{BTX Trader} \\
+	\textsl{February 2014 - December 2014} \hfill Manhattan, NY
+
+    \begin{itemize} \itemsep -2pt %reduce space between items
+    \item Worked as the only developer apart from the CTO in a tiny startup of 4 where I received firsthand experience to the inner workings of developing a product.
+    \item Received exposure to the Bitcoin industry and the associated techonologies involved; as well as an understanding of the core concepts of cryptocurrencies i.e. decentralized networks and cryptography.
+    \item Helped deliver, design, and implement financial tools and services on the web for the nascent industry.
+    \end{itemize}
+
+\section{EDUCATION}
+    Bachelor of Science, Computer Science \hfill \textbf{Rutgers State University} \\
+    \textsl{Graduated May 2013} \hfill New Brunswick, NJ
+
+    Courses: {\small Internet Technologies, Software Engineering, Operating Systems} \\
+    Notable Projects: {\small Multi-threaded bittorrent CLI, Simple FUSE filesystem}
+
+\section{ABOUT ME}
+    A curious tinkerer and thinker, indiscriminate of topic. Most of my requested vacation days are spent either traveling, mountain biking or some combination of the two. The majority of my entertainment is from watching sixty symbols videos or David Attenborough nature documentaries. Alright, and maybe Game of Thrones too. \\
+    \\
+    {\small You can find this resume hosted at github.com/PeteJodo/resume}
+
 
 \end{resume}
 \end{document}
-
-
-
-
